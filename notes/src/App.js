@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 
 import './App.css';
+//import { connect } from "react-redux";
 
-
-
+//import Authenticate from "./components/Authentication";
 import SideView from './components/SideView';
 import NotesPreview from './components/NotesPreview';
 import CreateNote from './components/CreateNote';
@@ -31,6 +31,7 @@ class App extends Component {
               <NotesPreview {...props}/>
             } 
           />
+ 
           <Route 
               exact path="/note/:id"
               render={props=>
@@ -53,4 +54,5 @@ class App extends Component {
   }
 }
 
-export default App;
+
+export default App
